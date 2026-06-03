@@ -1,0 +1,27 @@
+cat > .gitignore << 'EOF'
+# ROS 2 build artifacts
+build/
+install/
+log/
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+CTestTestfile.cmake
+
+# Compiled object files
+*.o
+*.so
+*.a
+*.d
+*.pyc
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+classification_results.txt
+EOF

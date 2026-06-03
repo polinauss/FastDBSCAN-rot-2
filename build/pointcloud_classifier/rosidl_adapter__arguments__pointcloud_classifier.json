@@ -1,7 +1,0 @@
-{
-  "package_name": "pointcloud_classifier",
-  "non_idl_tuples": [
-    "/home/polinaus/pointcloud_classifier:msg/ClusterResult.msg",
-    "/home/polinaus/pointcloud_classifier:msg/ClusterResultArray.msg"
-  ]
-}
