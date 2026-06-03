@@ -1,0 +1,524 @@
+[0.000000] (-) TimerEvent: {}
+[0.000618] (pointcloud_classifier) JobQueued: {'identifier': 'pointcloud_classifier', 'dependencies': OrderedDict()}
+[0.000685] (pointcloud_classifier) JobStarted: {'identifier': 'pointcloud_classifier'}
+[0.006604] (pointcloud_classifier) JobProgress: {'identifier': 'pointcloud_classifier', 'progress': 'cmake'}
+[0.007515] (pointcloud_classifier) Command: {'cmd': ['/usr/bin/cmake', '/home/polinaus/pointcloud_classifier', '-DCMAKE_INSTALL_PREFIX=/home/polinaus/pointcloud_classifier/install/pointcloud_classifier'], 'cwd': '/home/polinaus/pointcloud_classifier/build/pointcloud_classifier', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'no_proxy': 'localhost,127.0.0.0/8,::1', 'USER': 'polinaus', 'all_proxy': 'socks://127.0.0.1:10808/', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/polinaus', 'OLDPWD': '/home/polinaus/pointcloud_classifier/src', 'DESKTOP_SESSION': 'ubuntu', 'NO_PROXY': 'localhost,127.0.0.0/8,::1', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '4746', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=b4339d9fd019025e3a2fe8cb6a201fd2', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'polinaus', 'ALL_PROXY': 'socks://127.0.0.1:10808/', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome\\x2dsession\\x2dmanager.slice/gnome-session-manager@ubuntu.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'polinaus', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/home/polinaus/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/polinaus/.local/bin:/home/polinaus/.local/bin', 'SESSION_MANAGER': 'local/polinaus-ubuntu:@/tmp/.ICE-unix/4746,unix/polinaus-ubuntu:/tmp/.ICE-unix/4746', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/0b85ef1b_0c77_49cc_b252_ceb2b4b01db4', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.701IQ3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.134', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/polinaus/pointcloud_classifier/build/pointcloud_classifier', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=b4339d9fd019025e3a2fe8cb6a201fd2', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[0.054762] (pointcloud_classifier) StdoutLine: {'line': b'-- The C compiler identification is GNU 13.3.0\n'}
+[0.092175] (pointcloud_classifier) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 13.3.0\n'}
+[0.099786] (-) TimerEvent: {}
+[0.102647] (pointcloud_classifier) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.168724] (pointcloud_classifier) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.177689] (pointcloud_classifier) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.177860] (pointcloud_classifier) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.178093] (pointcloud_classifier) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.185475] (pointcloud_classifier) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.199864] (-) TimerEvent: {}
+[0.263716] (pointcloud_classifier) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.272823] (pointcloud_classifier) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.273089] (pointcloud_classifier) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.273848] (pointcloud_classifier) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.276188] (pointcloud_classifier) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)\n'}
+[0.299968] (-) TimerEvent: {}
+[0.373400] (pointcloud_classifier) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[0.400067] (-) TimerEvent: {}
+[0.439090] (pointcloud_classifier) StdoutLine: {'line': b'-- Found rclcpp: 28.1.18 (/opt/ros/jazzy/share/rclcpp/cmake)\n'}
+[0.461678] (pointcloud_classifier) StdoutLine: {'line': b'-- Found rosidl_generator_c: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)\n'}
+[0.468899] (pointcloud_classifier) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 4.6.7 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)\n'}
+[0.477796] (pointcloud_classifier) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.487450] (pointcloud_classifier) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.500160] (-) TimerEvent: {}
+[0.532360] (pointcloud_classifier) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)\n'}
+[0.533729] (pointcloud_classifier) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 8.4.3 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.599521] (pointcloud_classifier) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  \n'}
+[0.600227] (-) TimerEvent: {}
+[0.613372] (pointcloud_classifier) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") \n'}
+[0.633021] (pointcloud_classifier) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.677243] (pointcloud_classifier) StdoutLine: {'line': b'-- Found sensor_msgs: 5.3.7 (/opt/ros/jazzy/share/sensor_msgs/cmake)\n'}
+[0.700337] (-) TimerEvent: {}
+[0.714032] (pointcloud_classifier) StdoutLine: {'line': b'-- Found pcl_conversions: 2.6.4 (/opt/ros/jazzy/share/pcl_conversions/cmake)\n'}
+[0.757248] (pointcloud_classifier) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /usr/lib/x86_64-linux-gnu/cmake/pcl/Modules/FindFLANN.cmake:45 (find_package):\n'}
+[0.757546] (pointcloud_classifier) StderrLine: {'line': b'  Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT\n'}
+[0.757657] (pointcloud_classifier) StderrLine: {'line': b'  variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the\n'}
+[0.757752] (pointcloud_classifier) StderrLine: {'line': b'  cmake_policy command to set the policy and suppress this warning.\n'}
+[0.757848] (pointcloud_classifier) StderrLine: {'line': b'\n'}
+[0.757938] (pointcloud_classifier) StderrLine: {'line': b'  CMake variable FLANN_ROOT is set to:\n'}
+[0.758023] (pointcloud_classifier) StderrLine: {'line': b'\n'}
+[0.758133] (pointcloud_classifier) StderrLine: {'line': b'    /usr\n'}
+[0.758226] (pointcloud_classifier) StderrLine: {'line': b'\n'}
+[0.758316] (pointcloud_classifier) StderrLine: {'line': b'  For compatibility, find_package is ignoring the variable, but code in a\n'}
+[0.758407] (pointcloud_classifier) StderrLine: {'line': b'  .cmake module might still use it.\n'}
+[0.758496] (pointcloud_classifier) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.758771] (pointcloud_classifier) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:261 (find_package)\n'}
+[0.758887] (pointcloud_classifier) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:306 (find_flann)\n'}
+[0.758981] (pointcloud_classifier) StderrLine: {'line': b'  /usr/lib/x86_64-linux-gnu/cmake/pcl/PCLConfig.cmake:570 (find_external_library)\n'}
+[0.759082] (pointcloud_classifier) StderrLine: {'line': b'  /opt/ros/jazzy/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake:21 (find_package)\n'}
+[0.759173] (pointcloud_classifier) StderrLine: {'line': b'  /opt/ros/jazzy/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake:41 (include)\n'}
+[0.759258] (pointcloud_classifier) StderrLine: {'line': b'  CMakeLists.txt:11 (find_package)\n'}
+[0.759343] (pointcloud_classifier) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[0.759425] (pointcloud_classifier) StderrLine: {'line': b'\x1b[0m\n'}
+[0.759507] (pointcloud_classifier) StdoutLine: {'line': b'-- Found flann version 1.9.2\n'}
+[0.800453] (-) TimerEvent: {}
+[0.900733] (-) TimerEvent: {}
+[0.995794] (pointcloud_classifier) StdoutLine: {'line': b'-- Found OpenMP_CXX: -fopenmp (found version "4.5") \n'}
+[0.996035] (pointcloud_classifier) StdoutLine: {'line': b'-- Found OpenMP: TRUE (found version "4.5") found components: CXX \n'}
+[1.000822] (-) TimerEvent: {}
+[1.101144] (-) TimerEvent: {}
+[1.201470] (-) TimerEvent: {}
+[1.301824] (-) TimerEvent: {}
+[1.402248] (-) TimerEvent: {}
+[1.502562] (-) TimerEvent: {}
+[1.602894] (-) TimerEvent: {}
+[1.703220] (-) TimerEvent: {}
+[1.803511] (-) TimerEvent: {}
+[1.903876] (-) TimerEvent: {}
+[1.926696] (pointcloud_classifier) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[1.938140] (pointcloud_classifier) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.27\n'}
+[1.973402] (pointcloud_classifier) StdoutLine: {'line': b'-- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  \n'}
+[1.974268] (pointcloud_classifier) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.003965] (-) TimerEvent: {}
+[2.025225] (pointcloud_classifier) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[2.027018] (pointcloud_classifier) StdoutLine: {'line': b'-- Could NOT find Pcap (missing: PCAP_LIBRARIES PCAP_INCLUDE_DIRS) \n'}
+[2.034861] (pointcloud_classifier) StdoutLine: {'line': b'-- Found ZLIB: /usr/lib/x86_64-linux-gnu/libz.so (found version "1.3")  \n'}
+[2.046156] (pointcloud_classifier) StdoutLine: {'line': b'-- Found PNG: /usr/lib/x86_64-linux-gnu/libpng.so (found version "1.6.43") \n'}
+[2.104094] (-) TimerEvent: {}
+[2.204381] (-) TimerEvent: {}
+[2.304728] (-) TimerEvent: {}
+[2.324315] (pointcloud_classifier) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.329149] (pointcloud_classifier) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[2.404853] (-) TimerEvent: {}
+[2.505150] (-) TimerEvent: {}
+[2.594611] (pointcloud_classifier) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[2.605227] (-) TimerEvent: {}
+[2.705476] (-) TimerEvent: {}
+[2.805824] (-) TimerEvent: {}
+[2.865998] (pointcloud_classifier) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[2.905927] (-) TimerEvent: {}
+[3.006174] (-) TimerEvent: {}
+[3.106496] (-) TimerEvent: {}
+[3.134828] (pointcloud_classifier) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[3.135441] (pointcloud_classifier) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  \n'}
+[3.136008] (pointcloud_classifier) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[3.136642] (pointcloud_classifier) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  \n'}
+[3.137284] (pointcloud_classifier) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[3.137862] (pointcloud_classifier) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  \n'}
+[3.138120] (pointcloud_classifier) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.14  \n'}
+[3.138375] (pointcloud_classifier) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.14  \n'}
+[3.138980] (pointcloud_classifier) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[3.139651] (pointcloud_classifier) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  \n'}
+[3.140309] (pointcloud_classifier) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  \n'}
+[3.140962] (pointcloud_classifier) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  \n'}
+[3.141649] (pointcloud_classifier) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  \n'}
+[3.142296] (pointcloud_classifier) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  \n'}
+[3.142884] (pointcloud_classifier) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  \n'}
+[3.143602] (pointcloud_classifier) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  \n'}
+[3.144291] (pointcloud_classifier) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  \n'}
+[3.144958] (pointcloud_classifier) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  \n'}
+[3.145704] (pointcloud_classifier) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  \n'}
+[3.146376] (pointcloud_classifier) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  \n'}
+[3.146907] (pointcloud_classifier) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.14  \n'}
+[3.147164] (pointcloud_classifier) StdoutLine: {'line': b'-- Found PCL_MODELER: /usr/include/pcl-1.14  \n'}
+[3.147420] (pointcloud_classifier) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.14  \n'}
+[3.148079] (pointcloud_classifier) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  \n'}
+[3.148785] (pointcloud_classifier) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  \n'}
+[3.150449] (pointcloud_classifier) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at CMakeLists.txt:12 (find_package):\n'}
+[3.150511] (pointcloud_classifier) StderrLine: {'line': b'  Policy CMP0074 is not set: find_package uses <PackageName>_ROOT variables.\n'}
+[3.150557] (pointcloud_classifier) StderrLine: {'line': b'  Run "cmake --help-policy CMP0074" for policy details.  Use the cmake_policy\n'}
+[3.150602] (pointcloud_classifier) StderrLine: {'line': b'  command to set the policy and suppress this warning.\n'}
+[3.150646] (pointcloud_classifier) StderrLine: {'line': b'\n'}
+[3.150691] (pointcloud_classifier) StderrLine: {'line': b'  CMake variable PCL_ROOT is set to:\n'}
+[3.150737] (pointcloud_classifier) StderrLine: {'line': b'\n'}
+[3.150783] (pointcloud_classifier) StderrLine: {'line': b'    /usr\n'}
+[3.150829] (pointcloud_classifier) StderrLine: {'line': b'\n'}
+[3.150873] (pointcloud_classifier) StderrLine: {'line': b'  For compatibility, CMake is ignoring the variable.\n'}
+[3.150918] (pointcloud_classifier) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[3.150963] (pointcloud_classifier) StderrLine: {'line': b'\x1b[0m\n'}
+[3.158381] (pointcloud_classifier) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/opt/ros/jazzy/share/rosidl_default_generators/cmake)\n'}
+[3.168336] (pointcloud_classifier) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.6.7 (/opt/ros/jazzy/share/rosidl_adapter/cmake)\n'}
+[3.206698] (-) TimerEvent: {}
+[3.306967] (-) TimerEvent: {}
+[3.407254] (-) TimerEvent: {}
+[3.507510] (-) TimerEvent: {}
+[3.597030] (pointcloud_classifier) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)\n'}
+[3.607597] (-) TimerEvent: {}
+[3.707841] (-) TimerEvent: {}
+[3.808075] (-) TimerEvent: {}
+[3.908289] (-) TimerEvent: {}
+[4.008507] (-) TimerEvent: {}
+[4.092003] (pointcloud_classifier) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.108597] (-) TimerEvent: {}
+[4.208800] (-) TimerEvent: {}
+[4.302099] (pointcloud_classifier) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.303984] (pointcloud_classifier) StdoutLine: {'line': b'-- Found python_cmake_module: 0.11.1 (/opt/ros/jazzy/share/python_cmake_module/cmake)\n'}
+[4.308887] (-) TimerEvent: {}
+[4.403403] (pointcloud_classifier) StdoutLine: {'line': b'-- Found PythonExtra: /usr/bin/python3  \n'}
+[4.408981] (-) TimerEvent: {}
+[4.509263] (-) TimerEvent: {}
+[4.610113] (-) TimerEvent: {}
+[4.710391] (-) TimerEvent: {}
+[4.757436] (pointcloud_classifier) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter Development NumPy Development.Module Development.Embed \n'}
+[4.810509] (-) TimerEvent: {}
+[4.814285] (pointcloud_classifier) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter \n'}
+[4.853969] (pointcloud_classifier) StdoutLine: {'line': b'-- Configuring done (4.8s)\n'}
+[4.904100] (pointcloud_classifier) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[4.910615] (-) TimerEvent: {}
+[4.915238] (pointcloud_classifier) StdoutLine: {'line': b'-- Build files have been written to: /home/polinaus/pointcloud_classifier/build/pointcloud_classifier\n'}
+[4.931379] (pointcloud_classifier) CommandEnded: {'returncode': 0}
+[4.932649] (pointcloud_classifier) JobProgress: {'identifier': 'pointcloud_classifier', 'progress': 'build'}
+[4.932680] (pointcloud_classifier) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/polinaus/pointcloud_classifier/build/pointcloud_classifier', '--', '-j18', '-l18'], 'cwd': '/home/polinaus/pointcloud_classifier/build/pointcloud_classifier', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'no_proxy': 'localhost,127.0.0.0/8,::1', 'USER': 'polinaus', 'all_proxy': 'socks://127.0.0.1:10808/', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/polinaus', 'OLDPWD': '/home/polinaus/pointcloud_classifier/src', 'DESKTOP_SESSION': 'ubuntu', 'NO_PROXY': 'localhost,127.0.0.0/8,::1', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '4746', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=b4339d9fd019025e3a2fe8cb6a201fd2', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'polinaus', 'ALL_PROXY': 'socks://127.0.0.1:10808/', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome\\x2dsession\\x2dmanager.slice/gnome-session-manager@ubuntu.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'polinaus', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/home/polinaus/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/polinaus/.local/bin:/home/polinaus/.local/bin', 'SESSION_MANAGER': 'local/polinaus-ubuntu:@/tmp/.ICE-unix/4746,unix/polinaus-ubuntu:/tmp/.ICE-unix/4746', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/0b85ef1b_0c77_49cc_b252_ceb2b4b01db4', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.701IQ3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.134', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/polinaus/pointcloud_classifier/build/pointcloud_classifier', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=b4339d9fd019025e3a2fe8cb6a201fd2', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[4.977211] (pointcloud_classifier) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating Rust code for ROS interfaces\x1b[0m\n'}
+[4.977419] (pointcloud_classifier) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating type hashes for ROS interfaces\x1b[0m\n'}
+[4.977724] (pointcloud_classifier) StdoutLine: {'line': b'[  5%] \x1b[32mBuilding CXX object CMakeFiles/pcd_publisher.dir/src/pcd_publisher.cpp.o\x1b[0m\n'}
+[4.979929] (pointcloud_classifier) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_copy_pointcloud_classifier\n'}
+[5.010715] (-) TimerEvent: {}
+[5.111025] (-) TimerEvent: {}
+[5.118037] (pointcloud_classifier) StdoutLine: {'line': b'running egg_info\n'}
+[5.118549] (pointcloud_classifier) StdoutLine: {'line': b'creating pointcloud_classifier.egg-info\n'}
+[5.121372] (pointcloud_classifier) StdoutLine: {'line': b'[  5%] Built target pointcloud_classifier__rosidl_generator_type_description\n'}
+[5.130106] (pointcloud_classifier) StdoutLine: {'line': b'writing pointcloud_classifier.egg-info/PKG-INFO\n'}
+[5.130370] (pointcloud_classifier) StdoutLine: {'line': b'writing dependency_links to pointcloud_classifier.egg-info/dependency_links.txt\n'}
+[5.130499] (pointcloud_classifier) StdoutLine: {'line': b'writing top-level names to pointcloud_classifier.egg-info/top_level.txt\n'}
+[5.130570] (pointcloud_classifier) StdoutLine: {'line': b"writing manifest file 'pointcloud_classifier.egg-info/SOURCES.txt'\n"}
+[5.131076] (pointcloud_classifier) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[5.138398] (pointcloud_classifier) StdoutLine: {'line': b'[  7%] Built target pointcloud_classifier__rs\n'}
+[5.140318] (pointcloud_classifier) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[5.163693] (pointcloud_classifier) StdoutLine: {'line': b"reading manifest file 'pointcloud_classifier.egg-info/SOURCES.txt'\n"}
+[5.163956] (pointcloud_classifier) StdoutLine: {'line': b"writing manifest file 'pointcloud_classifier.egg-info/SOURCES.txt'\n"}
+[5.188149] (pointcloud_classifier) StdoutLine: {'line': b'[  9%] Built target ament_cmake_python_build_pointcloud_classifier_egg\n'}
+[5.211100] (-) TimerEvent: {}
+[5.310284] (pointcloud_classifier) StdoutLine: {'line': b'[  9%] Built target pointcloud_classifier__cpp\n'}
+[5.311207] (-) TimerEvent: {}
+[5.333778] (pointcloud_classifier) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/pointcloud_classifier__rosidl_generator_c.dir/rosidl_generator_c/pointcloud_classifier/msg/detail/cluster_result_array__description.c.o\x1b[0m\n'}
+[5.334032] (pointcloud_classifier) StdoutLine: {'line': b'[ 13%] \x1b[32mBuilding C object CMakeFiles/pointcloud_classifier__rosidl_generator_c.dir/rosidl_generator_c/pointcloud_classifier/msg/detail/cluster_result__functions.c.o\x1b[0m\n'}
+[5.334805] (pointcloud_classifier) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/pointcloud_classifier__rosidl_generator_c.dir/rosidl_generator_c/pointcloud_classifier/msg/detail/cluster_result__description.c.o\x1b[0m\n'}
+[5.335476] (pointcloud_classifier) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/pointcloud_classifier__rosidl_generator_c.dir/rosidl_generator_c/pointcloud_classifier/msg/detail/cluster_result__type_support.c.o\x1b[0m\n'}
+[5.336813] (pointcloud_classifier) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding C object CMakeFiles/pointcloud_classifier__rosidl_generator_c.dir/rosidl_generator_c/pointcloud_classifier/msg/detail/cluster_result_array__type_support.c.o\x1b[0m\n'}
+[5.336944] (pointcloud_classifier) StdoutLine: {'line': b'[ 21%] \x1b[32mBuilding C object CMakeFiles/pointcloud_classifier__rosidl_generator_c.dir/rosidl_generator_c/pointcloud_classifier/msg/detail/cluster_result_array__functions.c.o\x1b[0m\n'}
+[5.376477] (pointcloud_classifier) StdoutLine: {'line': b'[ 23%] \x1b[32m\x1b[1mLinking C shared library libpointcloud_classifier__rosidl_generator_c.so\x1b[0m\n'}
+[5.402750] (pointcloud_classifier) StdoutLine: {'line': b'[ 23%] Built target pointcloud_classifier__rosidl_generator_c\n'}
+[5.409101] (pointcloud_classifier) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[5.409370] (pointcloud_classifier) StdoutLine: {'line': b'[ 27%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.409496] (pointcloud_classifier) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[5.411300] (-) TimerEvent: {}
+[5.411622] (pointcloud_classifier) StdoutLine: {'line': b'[ 33%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[5.411820] (pointcloud_classifier) StdoutLine: {'line': b'[ 33%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[5.411947] (pointcloud_classifier) StdoutLine: {'line': b'[ 35%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[5.511440] (-) TimerEvent: {}
+[5.579255] (pointcloud_classifier) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/pointcloud_classifier__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pointcloud_classifier/msg/detail/cluster_result__type_support.cpp.o\x1b[0m\n'}
+[5.579501] (pointcloud_classifier) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/pointcloud_classifier__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/pointcloud_classifier/msg/detail/cluster_result_array__type_support.cpp.o\x1b[0m\n'}
+[5.600330] (pointcloud_classifier) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/pointcloud_classifier__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pointcloud_classifier/msg/detail/cluster_result_array__type_support_c.cpp.o\x1b[0m\n'}
+[5.600570] (pointcloud_classifier) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/pointcloud_classifier__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pointcloud_classifier/msg/detail/dds_fastrtps/cluster_result__type_support.cpp.o\x1b[0m\n'}
+[5.600667] (pointcloud_classifier) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/pointcloud_classifier__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/pointcloud_classifier/msg/detail/cluster_result__type_support_c.cpp.o\x1b[0m\n'}
+[5.600739] (pointcloud_classifier) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/pointcloud_classifier__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/pointcloud_classifier/msg/detail/dds_fastrtps/cluster_result_array__type_support.cpp.o\x1b[0m\n'}
+[5.611549] (-) TimerEvent: {}
+[5.638790] (pointcloud_classifier) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding C object CMakeFiles/pointcloud_classifier__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pointcloud_classifier/msg/detail/cluster_result_array__type_support.c.o\x1b[0m\n'}
+[5.639003] (pointcloud_classifier) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding C object CMakeFiles/pointcloud_classifier__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/pointcloud_classifier/msg/detail/cluster_result__type_support.c.o\x1b[0m\n'}
+[5.668955] (pointcloud_classifier) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/pointcloud_classifier__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pointcloud_classifier/msg/cluster_result_array__type_support.cpp.o\x1b[0m\n'}
+[5.669872] (pointcloud_classifier) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/pointcloud_classifier__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/pointcloud_classifier/msg/cluster_result__type_support.cpp.o\x1b[0m\n'}
+[5.678097] (pointcloud_classifier) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/pointcloud_classifier__rosidl_typesupport_c.dir/rosidl_typesupport_c/pointcloud_classifier/msg/cluster_result_array__type_support.cpp.o\x1b[0m\n'}
+[5.678340] (pointcloud_classifier) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/pointcloud_classifier__rosidl_typesupport_c.dir/rosidl_typesupport_c/pointcloud_classifier/msg/cluster_result__type_support.cpp.o\x1b[0m\n'}
+[5.684300] (pointcloud_classifier) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking C shared library libpointcloud_classifier__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[5.711669] (-) TimerEvent: {}
+[5.718720] (pointcloud_classifier) StdoutLine: {'line': b'[ 60%] Built target pointcloud_classifier__rosidl_typesupport_introspection_c\n'}
+[5.725015] (pointcloud_classifier) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking CXX shared library libpointcloud_classifier__rosidl_typesupport_c.so\x1b[0m\n'}
+[5.774173] (pointcloud_classifier) StdoutLine: {'line': b'[ 62%] Built target pointcloud_classifier__rosidl_typesupport_c\n'}
+[5.811779] (-) TimerEvent: {}
+[5.908165] (pointcloud_classifier) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libpointcloud_classifier__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[5.911856] (-) TimerEvent: {}
+[5.956660] (pointcloud_classifier) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library libpointcloud_classifier__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[5.963951] (pointcloud_classifier) StdoutLine: {'line': b'[ 66%] Built target pointcloud_classifier__rosidl_typesupport_introspection_cpp\n'}
+[5.989430] (pointcloud_classifier) StdoutLine: {'line': b'[ 66%] Built target pointcloud_classifier__rosidl_typesupport_cpp\n'}
+[6.007933] (pointcloud_classifier) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/classifier_node.dir/src/pointcloud_processor.cpp.o\x1b[0m\n'}
+[6.009549] (pointcloud_classifier) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/classifier_node.dir/src/classifier_node.cpp.o\x1b[0m\n'}
+[6.009774] (pointcloud_classifier) StdoutLine: {'line': b'[ 72%] \x1b[32mBuilding CXX object CMakeFiles/classifier_node.dir/src/utils.cpp.o\x1b[0m\n'}
+[6.011637] (pointcloud_classifier) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libpointcloud_classifier__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[6.011923] (-) TimerEvent: {}
+[6.080745] (pointcloud_classifier) StdoutLine: {'line': b'[ 76%] \x1b[32m\x1b[1mLinking CXX shared library libpointcloud_classifier__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[6.085775] (pointcloud_classifier) StdoutLine: {'line': b'[ 76%] Built target pointcloud_classifier__rosidl_typesupport_fastrtps_c\n'}
+[6.112034] (-) TimerEvent: {}
+[6.136382] (pointcloud_classifier) StdoutLine: {'line': b'[ 76%] Built target pointcloud_classifier__rosidl_typesupport_fastrtps_cpp\n'}
+[6.153680] (pointcloud_classifier) StdoutLine: {'line': b'[ 76%] Built target pointcloud_classifier\n'}
+[6.171395] (pointcloud_classifier) StdoutLine: {'line': b'[ 78%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[6.212115] (-) TimerEvent: {}
+[6.312366] (-) TimerEvent: {}
+[6.395596] (pointcloud_classifier) StdoutLine: {'line': b'[ 78%] Built target pointcloud_classifier__py\n'}
+[6.412494] (-) TimerEvent: {}
+[6.413516] (pointcloud_classifier) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/pointcloud_classifier__rosidl_generator_py.dir/rosidl_generator_py/pointcloud_classifier/msg/_cluster_result_array_s.c.o\x1b[0m\n'}
+[6.413753] (pointcloud_classifier) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/pointcloud_classifier__rosidl_generator_py.dir/rosidl_generator_py/pointcloud_classifier/msg/_cluster_result_s.c.o\x1b[0m\n'}
+[6.512605] (-) TimerEvent: {}
+[6.524076] (pointcloud_classifier) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking C shared library libpointcloud_classifier__rosidl_generator_py.so\x1b[0m\n'}
+[6.565918] (pointcloud_classifier) StdoutLine: {'line': b'[ 84%] Built target pointcloud_classifier__rosidl_generator_py\n'}
+[6.582503] (pointcloud_classifier) StdoutLine: {'line': b'[ 86%] \x1b[32mBuilding C object CMakeFiles/pointcloud_classifier_s__rosidl_typesupport_c.dir/rosidl_generator_py/pointcloud_classifier/_pointcloud_classifier_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[6.583887] (pointcloud_classifier) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/pointcloud_classifier_s__rosidl_typesupport_fastrtps_c.dir/rosidl_generator_py/pointcloud_classifier/_pointcloud_classifier_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[6.584786] (pointcloud_classifier) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/pointcloud_classifier_s__rosidl_typesupport_introspection_c.dir/rosidl_generator_py/pointcloud_classifier/_pointcloud_classifier_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[6.612721] (-) TimerEvent: {}
+[6.647695] (pointcloud_classifier) StdoutLine: {'line': b'[ 92%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/pointcloud_classifier/pointcloud_classifier_s__rosidl_typesupport_c.so\x1b[0m\n'}
+[6.674235] (pointcloud_classifier) StdoutLine: {'line': b'[ 92%] Built target pointcloud_classifier_s__rosidl_typesupport_c\n'}
+[6.689631] (pointcloud_classifier) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/pointcloud_classifier/pointcloud_classifier_s__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[6.691768] (pointcloud_classifier) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared module rosidl_generator_py/pointcloud_classifier/pointcloud_classifier_s__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[6.712829] (-) TimerEvent: {}
+[6.718033] (pointcloud_classifier) StdoutLine: {'line': b'[ 96%] Built target pointcloud_classifier_s__rosidl_typesupport_introspection_c\n'}
+[6.719651] (pointcloud_classifier) StdoutLine: {'line': b'[ 96%] Built target pointcloud_classifier_s__rosidl_typesupport_fastrtps_c\n'}
+[6.812970] (-) TimerEvent: {}
+[6.913406] (-) TimerEvent: {}
+[7.013806] (-) TimerEvent: {}
+[7.114240] (-) TimerEvent: {}
+[7.214664] (-) TimerEvent: {}
+[7.315121] (-) TimerEvent: {}
+[7.415498] (-) TimerEvent: {}
+[7.515805] (-) TimerEvent: {}
+[7.616109] (-) TimerEvent: {}
+[7.716407] (-) TimerEvent: {}
+[7.816747] (-) TimerEvent: {}
+[7.917118] (-) TimerEvent: {}
+[8.017466] (-) TimerEvent: {}
+[8.117872] (-) TimerEvent: {}
+[8.218117] (-) TimerEvent: {}
+[8.318408] (-) TimerEvent: {}
+[8.418705] (-) TimerEvent: {}
+[8.519007] (-) TimerEvent: {}
+[8.619309] (-) TimerEvent: {}
+[8.719604] (-) TimerEvent: {}
+[8.819895] (-) TimerEvent: {}
+[8.920190] (-) TimerEvent: {}
+[9.020488] (-) TimerEvent: {}
+[9.120833] (-) TimerEvent: {}
+[9.221194] (-) TimerEvent: {}
+[9.321473] (-) TimerEvent: {}
+[9.421759] (-) TimerEvent: {}
+[9.522067] (-) TimerEvent: {}
+[9.622340] (-) TimerEvent: {}
+[9.722624] (-) TimerEvent: {}
+[9.823050] (-) TimerEvent: {}
+[9.899904] (pointcloud_classifier) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking CXX executable pcd_publisher\x1b[0m\n'}
+[9.923129] (-) TimerEvent: {}
+[10.023360] (-) TimerEvent: {}
+[10.123577] (-) TimerEvent: {}
+[10.223785] (-) TimerEvent: {}
+[10.316467] (pointcloud_classifier) StdoutLine: {'line': b'[ 98%] Built target pcd_publisher\n'}
+[10.323855] (-) TimerEvent: {}
+[10.424082] (-) TimerEvent: {}
+[10.524319] (-) TimerEvent: {}
+[10.624629] (-) TimerEvent: {}
+[10.724971] (-) TimerEvent: {}
+[10.825313] (-) TimerEvent: {}
+[10.925618] (-) TimerEvent: {}
+[11.025931] (-) TimerEvent: {}
+[11.126256] (-) TimerEvent: {}
+[11.226565] (-) TimerEvent: {}
+[11.326879] (-) TimerEvent: {}
+[11.427199] (-) TimerEvent: {}
+[11.527478] (-) TimerEvent: {}
+[11.627784] (-) TimerEvent: {}
+[11.728100] (-) TimerEvent: {}
+[11.828403] (-) TimerEvent: {}
+[11.928713] (-) TimerEvent: {}
+[12.029019] (-) TimerEvent: {}
+[12.129338] (-) TimerEvent: {}
+[12.229647] (-) TimerEvent: {}
+[12.329995] (-) TimerEvent: {}
+[12.430369] (-) TimerEvent: {}
+[12.530635] (-) TimerEvent: {}
+[12.630949] (-) TimerEvent: {}
+[12.731283] (-) TimerEvent: {}
+[12.831601] (-) TimerEvent: {}
+[12.931975] (-) TimerEvent: {}
+[13.032396] (-) TimerEvent: {}
+[13.083509] (pointcloud_classifier) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable classifier_node\x1b[0m\n'}
+[13.132514] (-) TimerEvent: {}
+[13.232867] (-) TimerEvent: {}
+[13.333258] (-) TimerEvent: {}
+[13.433595] (-) TimerEvent: {}
+[13.533910] (-) TimerEvent: {}
+[13.634270] (-) TimerEvent: {}
+[13.734625] (-) TimerEvent: {}
+[13.834974] (-) TimerEvent: {}
+[13.935325] (-) TimerEvent: {}
+[14.035668] (-) TimerEvent: {}
+[14.136021] (-) TimerEvent: {}
+[14.219455] (pointcloud_classifier) StdoutLine: {'line': b'[100%] Built target classifier_node\n'}
+[14.229383] (pointcloud_classifier) CommandEnded: {'returncode': 0}
+[14.230010] (pointcloud_classifier) JobProgress: {'identifier': 'pointcloud_classifier', 'progress': 'install'}
+[14.236171] (pointcloud_classifier) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/polinaus/pointcloud_classifier/build/pointcloud_classifier'], 'cwd': '/home/polinaus/pointcloud_classifier/build/pointcloud_classifier', 'env': OrderedDict({'LESSOPEN': '| /usr/bin/lesspipe %s', 'no_proxy': 'localhost,127.0.0.0/8,::1', 'USER': 'polinaus', 'all_proxy': 'socks://127.0.0.1:10808/', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/jazzy/opt/rviz_ogre_vendor/lib:/opt/ros/jazzy/lib/x86_64-linux-gnu:/opt/ros/jazzy/opt/gz_math_vendor/lib:/opt/ros/jazzy/opt/gz_utils_vendor/lib:/opt/ros/jazzy/opt/gz_cmake_vendor/lib:/opt/ros/jazzy/lib', 'HOME': '/home/polinaus', 'OLDPWD': '/home/polinaus/pointcloud_classifier/src', 'DESKTOP_SESSION': 'ubuntu', 'NO_PROXY': 'localhost,127.0.0.0/8,::1', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '4746', 'GSM_SKIP_SSH_AGENT_WORKAROUND': 'true', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=b4339d9fd019025e3a2fe8cb6a201fd2', 'COLORTERM': 'truecolor', 'DEBUGINFOD_URLS': 'https://debuginfod.ubuntu.com', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'jazzy', 'LOGNAME': 'polinaus', 'ALL_PROXY': 'socks://127.0.0.1:10808/', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'MEMORY_PRESSURE_WATCH': '/sys/fs/cgroup/user.slice/user-1000.slice/user@1000.service/app.slice/app-gnome\\x2dsession\\x2dmanager.slice/gnome-session-manager@ubuntu.service/memory.pressure', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'polinaus', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'PATH': '/opt/ros/jazzy/bin:/home/polinaus/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/home/polinaus/.local/bin:/home/polinaus/.local/bin', 'SESSION_MANAGER': 'local/polinaus-ubuntu:@/tmp/.ICE-unix/4746,unix/polinaus-ubuntu:/tmp/.ICE-unix/4746', 'XDG_MENU_PREFIX': 'gnome-', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/0b85ef1b_0c77_49cc_b252_ceb2b4b01db4', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.701IQ3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.crdownload=00;90:*.dpkg-dist=00;90:*.dpkg-new=00;90:*.dpkg-old=00;90:*.dpkg-tmp=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:*.swp=00;90:*.tmp=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:', 'GNOME_TERMINAL_SERVICE': ':1.134', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/jazzy', 'SHELL': '/bin/bash', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'ROS_AUTOMATIC_DISCOVERY_RANGE': 'SUBNET', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/polinaus/pointcloud_classifier/build/pointcloud_classifier', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=b4339d9fd019025e3a2fe8cb6a201fd2', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/opt/ros/jazzy/lib/python3.12/site-packages', 'COLCON': '1', 'MEMORY_PRESSURE_WRITE': 'c29tZSAyMDAwMDAgMjAwMDAwMAA=', 'VTE_VERSION': '7600', 'CMAKE_PREFIX_PATH': '/opt/ros/jazzy/opt/gz_math_vendor:/opt/ros/jazzy/opt/gz_utils_vendor:/opt/ros/jazzy/opt/gz_cmake_vendor:/opt/ros/jazzy'}), 'shell': False}
+[14.236656] (-) TimerEvent: {}
+[14.243406] (pointcloud_classifier) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[14.243539] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/ament_index/resource_index/rosidl_interfaces/pointcloud_classifier\n'}
+[14.243600] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/msg/ClusterResult.json\n'}
+[14.243654] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/msg/ClusterResultArray.json\n'}
+[14.243706] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier\n'}
+[14.243764] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg\n'}
+[14.243801] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/cluster_result.h\n'}
+[14.243846] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/rosidl_generator_c__visibility_control.h\n'}
+[14.243900] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/cluster_result_array.h\n'}
+[14.243939] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/detail\n'}
+[14.243993] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/detail/cluster_result_array__description.c\n'}
+[14.244033] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/detail/cluster_result_array__type_support.h\n'}
+[14.244090] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/detail/cluster_result__type_support.h\n'}
+[14.244129] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/detail/cluster_result__description.c\n'}
+[14.244168] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/detail/cluster_result_array__struct.h\n'}
+[14.244220] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/detail/cluster_result__struct.h\n'}
+[14.244267] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/detail/cluster_result__functions.c\n'}
+[14.244305] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/detail/cluster_result__type_support.c\n'}
+[14.244342] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/detail/cluster_result_array__type_support.c\n'}
+[14.244396] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/detail/cluster_result_array__functions.h\n'}
+[14.244433] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/detail/cluster_result__functions.h\n'}
+[14.244468] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/detail/cluster_result_array__functions.c\n'}
+[14.244519] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/environment/library_path.sh\n'}
+[14.244557] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/environment/library_path.dsv\n'}
+[14.244599] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/libpointcloud_classifier__rosidl_generator_c.so\n'}
+[14.244729] (pointcloud_classifier) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/libpointcloud_classifier__rosidl_generator_c.so" to ""\n'}
+[14.244772] (pointcloud_classifier) StdoutLine: {'line': b'-- Up-to-date: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier\n'}
+[14.244821] (pointcloud_classifier) StdoutLine: {'line': b'-- Up-to-date: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg\n'}
+[14.244859] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[14.244911] (pointcloud_classifier) StdoutLine: {'line': b'-- Up-to-date: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/detail\n'}
+[14.244947] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/detail/cluster_result__rosidl_typesupport_fastrtps_c.h\n'}
+[14.244981] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/detail/cluster_result_array__rosidl_typesupport_fastrtps_c.h\n'}
+[14.245027] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/libpointcloud_classifier__rosidl_typesupport_fastrtps_c.so\n'}
+[14.245096] (pointcloud_classifier) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/libpointcloud_classifier__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[14.245148] (pointcloud_classifier) StdoutLine: {'line': b'-- Up-to-date: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier\n'}
+[14.245189] (pointcloud_classifier) StdoutLine: {'line': b'-- Up-to-date: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg\n'}
+[14.245242] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/cluster_result_array.hpp\n'}
+[14.245281] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/cluster_result.hpp\n'}
+[14.245317] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[14.245370] (pointcloud_classifier) StdoutLine: {'line': b'-- Up-to-date: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/detail\n'}
+[14.245407] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/detail/cluster_result_array__type_support.hpp\n'}
+[14.245453] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/detail/cluster_result__struct.hpp\n'}
+[14.245490] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/detail/cluster_result__traits.hpp\n'}
+[14.245525] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/detail/cluster_result_array__traits.hpp\n'}
+[14.245578] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/detail/cluster_result__builder.hpp\n'}
+[14.245615] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/detail/cluster_result__type_support.hpp\n'}
+[14.245650] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/detail/cluster_result_array__struct.hpp\n'}
+[14.245686] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/detail/cluster_result_array__builder.hpp\n'}
+[14.245734] (pointcloud_classifier) StdoutLine: {'line': b'-- Up-to-date: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier\n'}
+[14.245791] (pointcloud_classifier) StdoutLine: {'line': b'-- Up-to-date: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg\n'}
+[14.245828] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[14.245860] (pointcloud_classifier) StdoutLine: {'line': b'-- Up-to-date: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/detail\n'}
+[14.245894] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/detail/cluster_result__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[14.245931] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/detail/cluster_result_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[14.245966] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/detail/dds_fastrtps\n'}
+[14.246015] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/libpointcloud_classifier__rosidl_typesupport_fastrtps_cpp.so\n'}
+[14.246056] (pointcloud_classifier) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/libpointcloud_classifier__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[14.246105] (pointcloud_classifier) StdoutLine: {'line': b'-- Up-to-date: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier\n'}
+[14.246151] (pointcloud_classifier) StdoutLine: {'line': b'-- Up-to-date: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg\n'}
+[14.246189] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[14.246226] (pointcloud_classifier) StdoutLine: {'line': b'-- Up-to-date: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/detail\n'}
+[14.246263] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/detail/cluster_result__rosidl_typesupport_introspection_c.h\n'}
+[14.246314] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/detail/cluster_result__type_support.c\n'}
+[14.246351] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/detail/cluster_result_array__type_support.c\n'}
+[14.246387] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/detail/cluster_result_array__rosidl_typesupport_introspection_c.h\n'}
+[14.246431] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/libpointcloud_classifier__rosidl_typesupport_introspection_c.so\n'}
+[14.246472] (pointcloud_classifier) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/libpointcloud_classifier__rosidl_typesupport_introspection_c.so" to ""\n'}
+[14.246535] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/libpointcloud_classifier__rosidl_typesupport_c.so\n'}
+[14.246611] (pointcloud_classifier) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/libpointcloud_classifier__rosidl_typesupport_c.so" to ""\n'}
+[14.246660] (pointcloud_classifier) StdoutLine: {'line': b'-- Up-to-date: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier\n'}
+[14.246699] (pointcloud_classifier) StdoutLine: {'line': b'-- Up-to-date: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg\n'}
+[14.246736] (pointcloud_classifier) StdoutLine: {'line': b'-- Up-to-date: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/detail\n'}
+[14.246790] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/detail/cluster_result__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.246828] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/detail/cluster_result__type_support.cpp\n'}
+[14.246866] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/detail/cluster_result_array__type_support.cpp\n'}
+[14.246914] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_classifier/pointcloud_classifier/msg/detail/cluster_result_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[14.246952] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/libpointcloud_classifier__rosidl_typesupport_introspection_cpp.so\n'}
+[14.247013] (pointcloud_classifier) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/libpointcloud_classifier__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[14.247064] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/libpointcloud_classifier__rosidl_typesupport_cpp.so\n'}
+[14.247170] (pointcloud_classifier) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/libpointcloud_classifier__rosidl_typesupport_cpp.so" to ""\n'}
+[14.247220] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/environment/pythonpath.sh\n'}
+[14.247267] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/environment/pythonpath.dsv\n'}
+[14.247310] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/python3.12/site-packages/pointcloud_classifier-0.0.1-py3.12.egg-info\n'}
+[14.247355] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/python3.12/site-packages/pointcloud_classifier-0.0.1-py3.12.egg-info/SOURCES.txt\n'}
+[14.247401] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/python3.12/site-packages/pointcloud_classifier-0.0.1-py3.12.egg-info/top_level.txt\n'}
+[14.247447] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/python3.12/site-packages/pointcloud_classifier-0.0.1-py3.12.egg-info/dependency_links.txt\n'}
+[14.247497] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/python3.12/site-packages/pointcloud_classifier-0.0.1-py3.12.egg-info/PKG-INFO\n'}
+[14.247544] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/python3.12/site-packages/pointcloud_classifier\n'}
+[14.247587] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/python3.12/site-packages/pointcloud_classifier/_pointcloud_classifier_s.ep.rosidl_typesupport_c.c\n'}
+[14.247636] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/python3.12/site-packages/pointcloud_classifier/pointcloud_classifier_s__rosidl_typesupport_fastrtps_c.so\n'}
+[14.247683] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/python3.12/site-packages/pointcloud_classifier/_pointcloud_classifier_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[14.247733] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/python3.12/site-packages/pointcloud_classifier/__init__.py\n'}
+[14.247770] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/python3.12/site-packages/pointcloud_classifier/pointcloud_classifier_s__rosidl_typesupport_introspection_c.so\n'}
+[14.247820] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/python3.12/site-packages/pointcloud_classifier/msg\n'}
+[14.247858] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/python3.12/site-packages/pointcloud_classifier/msg/_cluster_result.py\n'}
+[14.247910] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/python3.12/site-packages/pointcloud_classifier/msg/_cluster_result_array_s.c\n'}
+[14.247950] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/python3.12/site-packages/pointcloud_classifier/msg/_cluster_result_array.py\n'}
+[14.247996] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/python3.12/site-packages/pointcloud_classifier/msg/__init__.py\n'}
+[14.248047] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/python3.12/site-packages/pointcloud_classifier/msg/_cluster_result_s.c\n'}
+[14.248092] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/python3.12/site-packages/pointcloud_classifier/pointcloud_classifier_s__rosidl_typesupport_c.so\n'}
+[14.248125] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/python3.12/site-packages/pointcloud_classifier/_pointcloud_classifier_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[14.273426] (pointcloud_classifier) StdoutLine: {'line': b"Listing '/home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/python3.12/site-packages/pointcloud_classifier'...\n"}
+[14.273583] (pointcloud_classifier) StdoutLine: {'line': b"Compiling '/home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/python3.12/site-packages/pointcloud_classifier/__init__.py'...\n"}
+[14.273664] (pointcloud_classifier) StdoutLine: {'line': b"Listing '/home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/python3.12/site-packages/pointcloud_classifier/msg'...\n"}
+[14.273737] (pointcloud_classifier) StdoutLine: {'line': b"Compiling '/home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/python3.12/site-packages/pointcloud_classifier/msg/__init__.py'...\n"}
+[14.273817] (pointcloud_classifier) StdoutLine: {'line': b"Compiling '/home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/python3.12/site-packages/pointcloud_classifier/msg/_cluster_result.py'...\n"}
+[14.273892] (pointcloud_classifier) StdoutLine: {'line': b"Compiling '/home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/python3.12/site-packages/pointcloud_classifier/msg/_cluster_result_array.py'...\n"}
+[14.276718] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/python3.12/site-packages/pointcloud_classifier/pointcloud_classifier_s__rosidl_typesupport_fastrtps_c.so\n'}
+[14.276942] (pointcloud_classifier) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/python3.12/site-packages/pointcloud_classifier/pointcloud_classifier_s__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[14.277108] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/python3.12/site-packages/pointcloud_classifier/pointcloud_classifier_s__rosidl_typesupport_introspection_c.so\n'}
+[14.277306] (pointcloud_classifier) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/python3.12/site-packages/pointcloud_classifier/pointcloud_classifier_s__rosidl_typesupport_introspection_c.so" to ""\n'}
+[14.277429] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/python3.12/site-packages/pointcloud_classifier/pointcloud_classifier_s__rosidl_typesupport_c.so\n'}
+[14.277599] (pointcloud_classifier) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/python3.12/site-packages/pointcloud_classifier/pointcloud_classifier_s__rosidl_typesupport_c.so" to ""\n'}
+[14.277700] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/libpointcloud_classifier__rosidl_generator_py.so\n'}
+[14.277837] (pointcloud_classifier) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/libpointcloud_classifier__rosidl_generator_py.so" to ""\n'}
+[14.277934] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/ament_index/resource_index/rust_packages/pointcloud_classifier\n'}
+[14.278049] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/rust\n'}
+[14.278134] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/rust/build.rs\n'}
+[14.278248] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/rust/src\n'}
+[14.278332] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/rust/src/msg.rs\n'}
+[14.278410] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/rust/src/lib.rs\n'}
+[14.278488] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/rust/src/msg\n'}
+[14.278602] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/rust/src/msg/rmw.rs\n'}
+[14.278681] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/rust/Cargo.toml\n'}
+[14.278757] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/msg/ClusterResult.idl\n'}
+[14.278832] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/msg/ClusterResultArray.idl\n'}
+[14.278905] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/msg/ClusterResult.msg\n'}
+[14.278975] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/msg/ClusterResultArray.msg\n'}
+[14.279075] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/pointcloud_classifier/classifier_node\n'}
+[14.281058] (pointcloud_classifier) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/pointcloud_classifier/classifier_node" to ""\n'}
+[14.281160] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/pointcloud_classifier/pcd_publisher\n'}
+[14.281751] (pointcloud_classifier) StdoutLine: {'line': b'-- Set non-toolchain portion of runtime path of "/home/polinaus/pointcloud_classifier/install/pointcloud_classifier/lib/pointcloud_classifier/pcd_publisher" to ""\n'}
+[14.281848] (pointcloud_classifier) StdoutLine: {'line': b'-- Up-to-date: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include\n'}
+[14.281927] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/cluster_info.hpp\n'}
+[14.281980] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/pointcloud_processor.hpp\n'}
+[14.282031] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/include/utils.hpp\n'}
+[14.282115] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/launch\n'}
+[14.282172] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/launch/classifier_launch.py\n'}
+[14.282224] (pointcloud_classifier) StdoutLine: {'line': b'-- Up-to-date: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/msg/ClusterResult.msg\n'}
+[14.282277] (pointcloud_classifier) StdoutLine: {'line': b'-- Up-to-date: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/msg/ClusterResultArray.msg\n'}
+[14.282327] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/ament_index/resource_index/package_run_dependencies/pointcloud_classifier\n'}
+[14.282392] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/ament_index/resource_index/parent_prefix_path/pointcloud_classifier\n'}
+[14.282474] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/environment/ament_prefix_path.sh\n'}
+[14.282529] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/environment/ament_prefix_path.dsv\n'}
+[14.282581] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/environment/path.sh\n'}
+[14.282651] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/environment/path.dsv\n'}
+[14.282703] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/local_setup.bash\n'}
+[14.282747] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/local_setup.sh\n'}
+[14.282790] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/local_setup.zsh\n'}
+[14.282834] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/local_setup.dsv\n'}
+[14.282876] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/package.dsv\n'}
+[14.282952] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/ament_index/resource_index/packages/pointcloud_classifier\n'}
+[14.282999] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/cmake/export_pointcloud_classifier__rosidl_generator_cExport.cmake\n'}
+[14.283061] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/cmake/export_pointcloud_classifier__rosidl_generator_cExport-noconfig.cmake\n'}
+[14.283106] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/cmake/export_pointcloud_classifier__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[14.283152] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/cmake/export_pointcloud_classifier__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[14.283196] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/cmake/export_pointcloud_classifier__rosidl_generator_cppExport.cmake\n'}
+[14.283263] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/cmake/export_pointcloud_classifier__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[14.283310] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/cmake/export_pointcloud_classifier__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[14.283355] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/cmake/pointcloud_classifier__rosidl_typesupport_introspection_cExport.cmake\n'}
+[14.283399] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/cmake/pointcloud_classifier__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[14.283467] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/cmake/pointcloud_classifier__rosidl_typesupport_cExport.cmake\n'}
+[14.283511] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/cmake/pointcloud_classifier__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[14.283557] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/cmake/pointcloud_classifier__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[14.283601] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/cmake/pointcloud_classifier__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[14.283660] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/cmake/pointcloud_classifier__rosidl_typesupport_cppExport.cmake\n'}
+[14.283731] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/cmake/pointcloud_classifier__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[14.283779] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/cmake/export_pointcloud_classifier__rosidl_generator_pyExport.cmake\n'}
+[14.283824] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/cmake/export_pointcloud_classifier__rosidl_generator_pyExport-noconfig.cmake\n'}
+[14.283889] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/cmake/rosidl_cmake-extras.cmake\n'}
+[14.283935] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[14.283979] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[14.284023] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[14.284085] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[14.284161] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[14.284209] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[14.284252] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/cmake/pointcloud_classifierConfig.cmake\n'}
+[14.284293] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/cmake/pointcloud_classifierConfig-version.cmake\n'}
+[14.284348] (pointcloud_classifier) StdoutLine: {'line': b'-- Installing: /home/polinaus/pointcloud_classifier/install/pointcloud_classifier/share/pointcloud_classifier/package.xml\n'}
+[14.285755] (pointcloud_classifier) CommandEnded: {'returncode': 0}
+[14.297575] (pointcloud_classifier) JobEnded: {'identifier': 'pointcloud_classifier', 'rc': 0}
+[14.298292] (-) EventReactorShutdown: {}

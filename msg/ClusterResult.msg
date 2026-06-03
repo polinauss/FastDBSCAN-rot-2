@@ -1,0 +1,11 @@
+int32 id
+string type_name
+int32 type_code
+float32 center_x
+float32 center_y
+float32 center_z
+int32 num_points
+float32 width
+float32 height
+float32 depth
+float32 density

@@ -1,0 +1,4 @@
+msg/ClusterResult.idl
+msg/ClusterResult.msg
+msg/ClusterResultArray.idl
+msg/ClusterResultArray.msg
