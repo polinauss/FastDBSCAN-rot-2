@@ -9,3 +9,4 @@ float32 width
 float32 height
 float32 depth
 float32 density
+builtin_interfaces/Time timestamp

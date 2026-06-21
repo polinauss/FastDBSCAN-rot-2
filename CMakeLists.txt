@@ -11,6 +11,7 @@ find_package(sensor_msgs REQUIRED)
 find_package(pcl_conversions REQUIRED)
 find_package(PCL REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
+find_package(builtin_interfaces REQUIRED)
 
 include_directories(include ${PCL_INCLUDE_DIRS})
 link_directories(${PCL_LIBRARY_DIRS})
@@ -37,10 +38,11 @@ ament_target_dependencies(classifier_node
   sensor_msgs
   pcl_conversions
   PCL
+  builtin_interfaces
 )
 
 target_include_directories(classifier_node PRIVATE
-  ${CMAKE_CURRENT_BINARY_DIR}/rosidl_generator_cpp
+  ${CMAKE_CURRENT_BINARY_DIR}
 )
 
 rosidl_get_typesupport_target(cpp_typesupport_target
@@ -73,5 +75,4 @@ install(FILES
   msg/ClusterResultArray.msg
   DESTINATION share/${PROJECT_NAME}/msg
 )
-
 ament_package()
