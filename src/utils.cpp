@@ -36,15 +36,22 @@ bool saveResultsToCSV(const std::string& filename, const std::vector<ClusterInfo
 }
 
 bool saveResultsToCustomFormat(const std::string& filename, const std::vector<ClusterInfo>& results, float timestamp) {
-    std::ofstream file(filename);
-    if (!file.is_open()) return false;
+    std::ofstream file(filename, std::ios::app);
+    if (!file.is_open()) {
+        std::cerr << "Не удалось открыть файл для дозаписи: " << filename << std::endl;
+        return false;
+    }
     file << std::fixed << std::setprecision(6) << timestamp;
-    for (const auto& info : results) {
-        file << " " << info.center_x << "," << info.center_y << "," << info.center_z << "," << clusterTypeToInt(info.type);
+    for (size_t i = 0; i < results.size(); ++i) {
+        const auto& info = results[i];
+        file << " " << info.center_x << ","<< info.center_y << ","<< info.center_z << ","<< utils::clusterTypeToInt(info.type);
+        if (i != results.size() - 1) {
+            file << ";";
+        }
     }
     file << std::endl;
     file.close();
-    std::cout << "Сцена сохранена: " << filename << std::endl;
+    std::cout << "Сцена добавлена в файл: " << filename << std::endl;
     return true;
 }
 
