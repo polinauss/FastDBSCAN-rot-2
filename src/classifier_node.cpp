@@ -2,7 +2,6 @@
 #include <string>
 #include <vector>
 #include <chrono>
-
 #include "rclcpp/rclcpp.hpp"
 #include "sensor_msgs/msg/point_cloud2.hpp"
 #include "pcl_conversions/pcl_conversions.h"
@@ -13,12 +12,9 @@
 #include "pointcloud_classifier/msg/cluster_result_array.hpp"
 
 using PointCloud2 = sensor_msgs::msg::PointCloud2;
-
-class PointCloudClassifierNode : public rclcpp::Node
-{
+class PointCloudClassifierNode : public rclcpp::Node{
 public:
-    PointCloudClassifierNode() : Node("pointcloud_classifier_node")
-    {
+    PointCloudClassifierNode() : Node("pointcloud_classifier_node"),first_received_(false),first_timestamp_sec_(0.0){
         this->declare_parameter<int>("fastdbscan_K", 80);
         this->declare_parameter<float>("fastdbscan_t", 0.12f);
         this->declare_parameter<float>("fastdbscan_eps", 0.5f);
@@ -27,7 +23,6 @@ public:
         this->declare_parameter<float>("filter_stddev_mult", 1.0f);
         this->declare_parameter<std::string>("output_file", "classification_results.txt");
         this->declare_parameter<bool>("save_to_file", true);
-
         fastdbscan_K_ = this->get_parameter("fastdbscan_K").as_int();
         fastdbscan_t_ = this->get_parameter("fastdbscan_t").as_double();
         fastdbscan_eps_ = this->get_parameter("fastdbscan_eps").as_double();
@@ -37,24 +32,28 @@ public:
         output_file_ = this->get_parameter("output_file").as_string();
         save_to_file_ = this->get_parameter("save_to_file").as_bool();
 
-        subscription_ = this->create_subscription<PointCloud2>("/input_pointcloud", 10,std::bind(&PointCloudClassifierNode::cloudCallback, this, std::placeholders::_1));
-
+        subscription_ = this->create_subscription<PointCloud2>("/input_pointcloud", 10, std::bind(&PointCloudClassifierNode::cloudCallback, this, std::placeholders::_1));
         result_publisher_ = this->create_publisher<pointcloud_classifier::msg::ClusterResultArray>("/cluster_results", 10);
-
-        RCLCPP_INFO(this->get_logger(),
-            "FastDBSCAN node ready. K=%d, t=%.2f, eps=%.2f, minPts=%d",fastdbscan_K_, fastdbscan_t_, fastdbscan_eps_, fastdbscan_minPts_);
+        RCLCPP_INFO(this->get_logger(),"FastDBSCAN node ready. K=%d, t=%.2f, eps=%.2f, minPts=%d",fastdbscan_K_, fastdbscan_t_, fastdbscan_eps_, fastdbscan_minPts_);
     }
 
 private:
-    void cloudCallback(const PointCloud2::SharedPtr msg)
-    {
+    void cloudCallback(const PointCloud2::SharedPtr msg){
         auto start = std::chrono::steady_clock::now();
         auto stamp = msg->header.stamp;
-        float timestamp_sec = static_cast<float>(stamp.sec) + static_cast<float>(stamp.nanosec) * 1e-9f;
+        float current_sec = static_cast<float>(stamp.sec) + static_cast<float>(stamp.nanosec) * 1e-9f;
+
+        if (!first_received_) {
+            first_timestamp_sec_ = current_sec;
+            first_received_ = true;
+        }
+        float relative_time = current_sec - first_timestamp_sec_;
+
         pcl::PointCloud<pcl::PointXYZ>::Ptr pcl_cloud(new pcl::PointCloud<pcl::PointXYZ>);
         pcl::fromROSMsg(*msg, *pcl_cloud);
         PointCloudProcessor processor;
         processor.setInputCloud(pcl_cloud);
+
         processor.preprocessCloud(mean_k_, static_cast<float>(stddev_mult_));
         processor.performFastDBSCAN(fastdbscan_K_, static_cast<float>(fastdbscan_t_),static_cast<float>(fastdbscan_eps_), fastdbscan_minPts_);
         processor.analyzeClusters();
@@ -83,7 +82,7 @@ private:
         result_publisher_->publish(result_array);
 
         if (save_to_file_) {
-            processor.saveResultsToCustomFormat(output_file_, timestamp_sec);
+            processor.saveResultsToCustomFormat(output_file_, relative_time);
         }
 
         auto end = std::chrono::steady_clock::now();
@@ -99,10 +98,11 @@ private:
     double stddev_mult_;
     std::string output_file_;
     bool save_to_file_;
+    bool first_received_;
+    float first_timestamp_sec_;
 };
 
-int main(int argc, char ** argv)
-{
+int main(int argc, char ** argv){
     rclcpp::init(argc, argv);
     auto node = std::make_shared<PointCloudClassifierNode>();
     rclcpp::spin(node);
