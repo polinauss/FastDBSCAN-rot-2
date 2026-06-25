@@ -68,9 +68,11 @@ private:
         }
 
         result_publisher_->publish(result_array);
-        if (save_to_file_) {
-            processor.saveResultsToFile(output_file_);
-        }
+       if (save_to_file_) {
+        auto stamp = msg->header.stamp;
+        float timestamp_sec = static_cast<float>(stamp.sec) + static_cast<float>(stamp.nanosec) * 1e-9f;
+        processor.saveResultsToCustomFormat(output_file_, timestamp_sec);
+}
 
         auto end = std::chrono::steady_clock::now();
         auto ms = std::chrono::duration_cast<std::chrono::milliseconds>(end - start).count();
